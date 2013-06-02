@@ -13,20 +13,31 @@
 	<defaultGoal>package</defaultGoal>
 	</build>
 
-		<dependencies>
-		    <dependency>
-		          <groupId>junit</groupId>
-		                <artifactId>junit</artifactId>
-		                      <version>4.8.1</version>
-		                      <scope>test</scope>
-		                                </dependency>
+<distributionManagement>
+<repository>
+<id>releases</id>
+<name>Releases</name>
+<url>http://localhost:8081/nexus/content/repositories/releases</url>
+</repository>
+<snapshotRepository>
+<id>snapshots</id>
+<name>Snapshots</name>
+<url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+</snapshotRepository>
+</distributionManagement>
 
-		                                    <dependency>
-		                                          <groupId>commons-collections</groupId>
-		                                                <artifactId>commons-collections</artifactId>
-		                                                      <version>3.0</version>
-		                                                                </dependency>
-		                                                                  </dependencies>
+
+<dependencies>
+<dependency>
+<groupId>junit</groupId>
+<artifactId>junit</artifactId>
+<version>4.8.1</version>
+<scope>test</scope>
+</dependency>
+
+<dependency>
+<groupId>commons-collections</groupId>		                                <artifactId>commons-collections</artifactId>                                    <version>3.0</version>
+</dependency>	                                                                </dependencies>
 
 
 
